@@ -192,28 +192,60 @@ header {
 
 @media (max-width: 760px) {
   .navbar {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
   }
-  .navbar a {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    border: 1px solid white;
-    flex-grow: 4;
+
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .main-article .image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .main-article .content {
+    width: 100%;
   }
 
   .articles-container {
-    display: flex;
     flex-direction: column;
+    padding: 0;
+  }
 
-    align-items: center;
-    box-sizing: border-box;
-    width: 1430px;
-    padding: 10px 20px;
-    justify-content: space-between;
+  .main-article,
+  .article {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+/* "tablet" >760px and <1024px*/
+
+@media (max-width: 1024px) and (min-width: 760px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .main-article .image {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .main-article .content {
+    width: 100%;
+  }
+
+  .articles-container .article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-bottom: 15px;
+    padding: 0;
   }
 }
